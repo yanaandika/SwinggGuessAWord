@@ -21,14 +21,7 @@ import javax.swing.JOptionPane;
 public class GuessingGame extends javax.swing.JFrame {
 
     WordModel modelWorld;
-//String basicWord;
-//String[] bankSoal = {"Pondok Indah","Sudirman","Tugu Tani","Citos","Gandaria"};;
-//WordModel soal1 = new WordModel("Pondok Indah","Daerah Jakarta Selatan");
-//WordModel soal2 = new WordModel("Sudirman","Jalan Utama Jakarta");
-//WordModel soal3 = new WordModel("Tugu Tani","Patung Deket Monas");
-//WordModel soal4 = new WordModel("Tugu Tani","Mall di Selatan Jakarta");
-//WordModel soal5 = new WordModel("Gandaria City","Mall anaka Muda");
-//WordModel[] bankSoal = {soal1,soal2,soal3,soal4,soal5};    
+
     /**
      * Creates new form GuessingGame
      */
@@ -160,28 +153,7 @@ public class GuessingGame extends javax.swing.JFrame {
 
         int soalIndex = (int) Math.floor(Math.random() * bankSoal.size());
         modelWorld = bankSoal.get(soalIndex);
-        txtSoal.setText(modelWorld.acakKata());
-//        
-//        String[] arrayOfWord = basicWord.split("");//Fungsinyauntuk memimasahkan antar spasi
-//        
-//        String basicWord1= "Buaya, Kijang, Singa";
-//        String[] arrayOfWord1 = basicWord.split(",");//Fungsinyauntuk memimasahkan antar spasi
-//        
-//        System.out.println("huruf ke 2 : " + arrayOfWord[1]);//Cara mengambil Indexnya
-//        for (int i = 0; i < arrayOfWord.length; i++) {
-//            System.out.println(arrayOfWord[i]);
-//        }
-//        
-//        Arrays.sort(arrayOfWord);
-//        StringBuilder sb = new StringBuilder();
-//        System.out.println("\n Setelah Disort \n");
-//        for (int i = 0; i < arrayOfWord.length; i++) {
-//            System.out.println(arrayOfWord[i]);
-//            sb.append(arrayOfWord[i]);// Untuk Menggabungkan data yang ada dari atas
-//        }
-//        
-//        String  soal =  sb.toString();
-//        txtSoal.setText(soal.trim());
+        txtSoal.setText(modelWorld.acakKata());      
     }//GEN-LAST:event_btnMulaiActionPerformed
 
     private void btnCheckAnswerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckAnswerActionPerformed
